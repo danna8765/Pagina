@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center; /* Centrar todo el texto en el cuerpo */
+}
+
+/* Contenedor principal */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+/* Navegación principal */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  /* nothing needed */
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+  color: #f9a825; /* golden accent */
+  border-bottom: 2px solid #f9a825;
+  padding-bottom: 3px;
+}
+
+/* Secciones principales */
+section {
+  margin-bottom: 40px;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 500px;       /* Ancho fijo */
+  height: auto;       /* Altura automática para no cortar */
+}
+
+/* Bloques de cita */
+blockquote {
+  background-color: #f9f9f9;
+  border-left: 10px solid #f9a825;
+  margin: 30px 0;
+  padding: 15px 20px;
+  font-style: italic;
+  color: #555;
+  position: relative;
+}
+
+blockquote footer {
+  text-align: right;
+  font-weight: 700;
+  color: #b1b1b1;
+  margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+/* Formateo de texto adicional */
+h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Link styling for content */
+p a {
+  color: #f9a825;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 100%; /* Ajustar el ancho en pantallas pequeñas */
+    height: auto; /* Mantener la proporción */
+  }
+}
