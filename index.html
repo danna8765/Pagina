@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Define el idioma como español -->
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Principal - El Piano</title>
-  <link rel="icon" href="s.webp">
-  <link rel="stylesheet" href="i.css" />
+  <link rel="icon" href="imagenes/lo.jpg" />
+  <link rel="stylesheet" href="css/i.css" />
 </head>
-<body>
 
+<body>
   <header>
     <h1>El Fascinante Mundo del Piano</h1>
     <nav>
@@ -25,13 +26,13 @@
   <main>
     <section>
       <h2>Introducción</h2>
-      <p>El piano es uno de los instrumentos musicales más versátiles y populares. A lo largo de los siglos, ha acompañado diversos géneros y estilos musicales, desde la música clásica hasta el jazz y el pop.</p>
-      <img src="imagenes/s.jpg" alt="Piano" />
+      <p>El <strong>piano</strong> es uno de los instrumentos musicales más versátiles y populares. A lo largo de los siglos, ha acompañado diversos géneros y estilos musicales, desde la música clásica hasta el jazz y el pop.</p>
+      <img src="imagenes/s.jpg" alt="Imagen de un piano de cola clásico" title="Piano clásico" />
     </section>
 
     <section>
       <h2>¿Por qué el Piano?</h2>
-      <p>Aqui podremos explorar este nuevo mundo del piano con, tipos, pianistas destacados y consejos para aprender a tocar este magnifico intrumento.</p>
+      <p><em>Explorar el piano</em> es sumergirse en un mundo de armonía y expresión. Aquí descubrirás sus tipos, pianistas destacados y consejos para aprender a tocarlo.</p>
       <blockquote>
         <p>"El piano es el instrumento que enseña a los músicos a organizar y a entender la música a fondo."</p>
         <footer>— Franz Liszt</footer>
@@ -42,6 +43,24 @@
   <footer>
     <p>© 2025 El Mundo del Piano. Todos los derechos reservados.</p>
   </footer>
-</body>
-</html>
 
+  <!-- Script para marcar dinámicamente el enlace activo -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('nav ul li a');
+      const currentPath = window.location.pathname.split('/').pop();
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPath ||
+            (currentPath === '' && link.getAttribute('href') === 'index.html')) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

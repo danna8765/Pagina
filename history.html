@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- El idioma principal de la página se define como inglés -->
+<html lang="es"> <!-- Idioma definido como español -->
 <head>
-    <!-- Codificación de caracteres, necesaria para tildes y caracteres especiales -->
-    <meta charset="UTF-8">
-
-    <!-- Permite diseño responsivo, adaptado a dispositivos móviles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título de la página que aparece en la pestaña del navegador -->
-    <title>Historia</title>
-
-    <!-- Ícono que aparece en la pestaña del navegador -->
-    <link rel="icon" href="s.webp">
-
-    <!-- Vinculación con el archivo de estilos externo -->
-    <link rel="stylesheet" href="i.css">
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación para dispositivos móviles -->
+    <title>Historia del Piano</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="imagenes/lo.jpg"> <!-- Icono del sitio -->
+    <link rel="stylesheet" href="css/i.css"> <!-- Enlace a la hoja de estilos -->
 </head>
 
 <body>
-    <!-- Encabezado con título y navegación del sitio -->
     <header>
-        <h1>Historia</h1>
-        <!-- Menú de navegación con enlaces a otras páginas del sitio -->
+        <h1>Historia del Piano</h1> <!-- Encabezado principal -->
         <nav>
             <ul>
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="history.html">Historia</a></li>
+                <!-- Menú de navegación -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="history.html" aria-current="page">Historia</a></li>
                 <li><a href="types.html">Tipos de Piano</a></li>
                 <li><a href="famous.html">Pianistas Famosos</a></li>
                 <li><a href="learning.html">Aprender Piano</a></li>
@@ -33,48 +23,42 @@
         </nav>
     </header>
 
-    <!-- Contenido principal de la página -->
     <main>
-
-        <!-- Sección sobre los orígenes del piano -->
         <section>
-            <h2>El invento del piano</h2>
-            <h3>El antepasado del piano era un instrumento de monocordio</h3>
-            <p>
-                Los instrumentos pueden dividirse en tres categorías... El piano puede ser clasificado como un instrumento de cuerda.
-            </p>
-            <!-- Imagen del instrumento antecesor del piano -->
-            <img src="imagenes/his.png" alt="Origen" />
+            <h2>El origen del piano</h2> <!-- Encabezado de nivel 2 para toda la sección -->
+
+            <section>
+                <h3>El antepasado del piano: el monocordio</h3>
+                <p>
+                    Los instrumentos musicales se clasifican según cómo producen el sonido: de cuerda, viento o percusión. El <strong>piano</strong> pertenece a la familia de cuerda, y su origen se remonta al <em>monocordio</em>, uno de los instrumentos más antiguos que utilizaban una sola cuerda para producir sonidos.
+                    Con el tiempo, este evolucionó en instrumentos como el <em>clavicordio</em>, el <em>clavecín</em> y el <em>dulcimer</em>.
+                </p>
+                <img src="imagenes/his.png" alt="Representación antigua del monocordio, antecesor del piano" title="Monocordio, antecesor del piano">
+            </section>
+
+            <section>
+                <h3>El dulcimer y su similitud con el piano</h3>
+                <p>
+                    Aunque el piano es de cuerda, también puede considerarse de percusión, ya que sus cuerdas se golpean con martillos. El <strong>dulcimer</strong>, originario de Oriente Medio y adoptado en Europa en el siglo XI, también utiliza martillos para producir sonidos, convirtiéndolo en un instrumento clave en la evolución hacia el piano moderno.
+                </p>
+                <img src="imagenes/dulcimer.webp" alt="Instrumento dulcimer de cuerda percutida" title="Dulcimer, antecesor directo del piano">
+            </section>
+
+            <section>
+                <h3>Bartolomeo Cristofori y la invención del piano</h3>
+                <p>
+                    El <strong>piano moderno</strong> fue inventado por <em>Bartolomeo Cristofori</em> (1655–1731), en Italia. Inconforme con las limitaciones del clavicordio, diseñó un nuevo mecanismo con martillos alrededor del año 1700. Su creación original se llamó <em>"clavicembalo col piano e forte"</em>, que se traduce como "instrumento de teclado que puede tocar suave y fuerte", de donde se deriva el nombre actual: <strong>piano</strong>.
+                </p>
+                <img src="imagenes/origen.jpg" alt="Retrato de Bartolomeo Cristofori, inventor del piano" title="Bartolomeo Cristofori, inventor del piano">
+            </section>
         </section>
 
-        <!-- Sección sobre el dulcimer, antecesor directo del piano -->
-        <section>
-            <h3>El piano tiene el mismo mecanismo que el dulcimer</h3>
-            <p>
-                Aunque el piano puede ser clasificado como un instrumento de cuerda... por lo que el dulcimer es considerado como un antepasado directo del piano.
-            </p>
-            <!-- Imagen del dulcimer -->
-            <img src="imagenes/dulcimer.webp" alt="Dulcimer" />
-        </section>
-
-        <!-- Sección sobre el inventor del piano moderno -->
-        <section>
-            <h3>Cristofori el creador del primer piano</h3>
-            <p>
-                El piano fue inventado por Bartolomeo Cristofori... Esto se acortó al nombre común ahora, "piano".
-            </p>
-            <!-- Imagen relacionada con Cristofori (se corrige el error en el cierre de etiqueta) -->
-            <img src="imagenes/Origen.jpg" alt="Cristofori" />
-        </section>
-
-        <!-- Cita destacada sobre la invención del piano -->
         <blockquote>
             <p>“El piano fue inventado por Bartolomeo Cristofori en el año 1700, y se considera el precursor del piano moderno.”</p>
-            <footer>— Yamaha, "Estructura del Piano"</footer>
+            <footer>— Yamaha, <cite>Estructura del Piano</cite></footer>
         </blockquote>
     </main>
 
-    <!-- Pie de página con derechos de autor -->
     <footer>
         <p>© 2025 El Mundo del Piano. Todos los derechos reservados.</p>
     </footer>

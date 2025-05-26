@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* ===== Estilos Generales ===== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fefefe;
@@ -6,22 +6,22 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  text-align: center; /* Centrar todo el texto en el cuerpo */
+  text-align: center; /* Centra el texto por defecto */
 }
 
-/* Contenedor principal */
+/* ===== Contenedor Principal ===== */
 main {
   max-width: 900px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
-/* Encabezado */
+/* ===== Encabezado ===== */
 header {
   background-color: #111;
   color: #fff;
   padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -32,7 +32,7 @@ header h1 {
   font-family: 'Georgia', serif;
 }
 
-/* Navegación principal */
+/* ===== Navegación Principal ===== */
 nav ul {
   list-style: none;
   padding: 0;
@@ -42,42 +42,40 @@ nav ul {
   gap: 30px;
 }
 
-nav ul li {
-  /* nothing needed */
-}
+
 
 nav ul li a {
   color: #ddd;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
   padding: 5px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a[aria-current="page"] {
-  color: #f9a825; /* golden accent */
+  color: #f9a825; /* Acento dorado */
   border-bottom: 2px solid #f9a825;
   padding-bottom: 3px;
 }
 
-/* Secciones principales */
+/* ===== Secciones Principales ===== */
 section {
   margin-bottom: 40px;
 }
 
-/* Imágenes */
+/* ===== Imágenes ===== */
 img {
   display: block;
   margin: 20px auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 500px;       /* Ancho fijo */
-  height: auto;       /* Altura automática para no cortar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
 }
 
-/* Bloques de cita */
+/* ===== Citas (blockquote) ===== */
 blockquote {
   background-color: #f9f9f9;
   border-left: 10px solid #f9a825;
@@ -95,17 +93,17 @@ blockquote footer {
   margin-top: 10px;
 }
 
-/* Pie de página */
+/* ===== Pie de Página ===== */
 footer {
   background-color: #111;
   color: #bbb;
   text-align: center;
   padding: 15px 10px;
   font-size: 0.9rem;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Formateo de texto adicional */
+/* ===== Tipografía de Títulos ===== */
 h2 {
   font-family: 'Georgia', serif;
   font-size: 2rem;
@@ -113,7 +111,7 @@ h2 {
   color: #333;
 }
 
-/* Link styling for content */
+/* ===== Enlaces en Párrafos ===== */
 p a {
   color: #f9a825;
   text-decoration: none;
@@ -123,7 +121,7 @@ p a:hover {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* ===== Diseño Responsive ===== */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -139,7 +137,9 @@ p a:hover {
   }
 
   img {
-    width: 100%; /* Ajustar el ancho en pantallas pequeñas */
-    height: auto; /* Mantener la proporción */
+    width: 100%;
+    height: auto;
   }
 }
+
+
